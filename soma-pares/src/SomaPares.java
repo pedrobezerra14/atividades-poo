@@ -19,7 +19,7 @@ public class SomaPares {
             }
         }
 
-        System.out.println("Resultado da soma dos números pares -> " + somaPares);
+        System.out.println("o resultado da soma dos números pares é " + somaPares);
         scanner.close();
     }
 }
