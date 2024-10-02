@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class PreencherVetor {
+public class CompletarVetor {
 
-    public static void preencherVetor(int[] vetor) {
+    public static void completarVetor(int[] vetor) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Digite os valores para preencher o vetor:");
+        System.out.println("Informe os valores do vetor:");
 
         for (int i = 0; i < vetor.length; i++) {
             vetor[i] = scanner.nextInt();
@@ -15,18 +15,14 @@ public class PreencherVetor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitando o tamanho do vetor
-        System.out.print("Digite o tamanho do vetor: ");
+        System.out.print("Informe o tamanho que o vetor irá ter: ");
+
         int tamanho = scanner.nextInt();
 
-        // Criando o vetor com o tamanho escolhido pelo usuário
         int[] vetor = new int[tamanho];
 
-        // Chamando a função para preencher o vetor
-        preencherVetor(vetor);
+        completarVetor(vetor);
 
-        // Exibindo o vetor preenchido
-        System.out.println("Vetor preenchido:");
         for (int valor : vetor) {
             System.out.print(valor + " ");
         }
